@@ -1,0 +1,12 @@
+<div class="" *ngFor="let transaction of transactions; let e = index ">
+    <div class="row blacktext small ">
+    <div class="col-6 pt-1 ">
+        <p class="pl-4"> {{e}}</p> <!--this supposed to show count -->
+    </div>
+    
+    <div class="col-6 pt-1" *ngFor="let result of filter(transaction)">
+        <p>{{result.created_at}}</p>
+    </div>
+</div>
+    
+    
